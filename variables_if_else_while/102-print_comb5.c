@@ -22,12 +22,12 @@ int main(void)
 	putchar (n4);
 	if (n1 == '9' && n2 == '8' && n3 == '9' && n4 == '9')
 {
-        putchar('\n');
+	putchar('\n');
 }
 	else
 {
-        putchar(',');
-        putchar(' ');
+	putchar(',');
+	putchar(' ');
 }
 }
 	return (0);

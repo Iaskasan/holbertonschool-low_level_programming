@@ -1,9 +1,8 @@
 #include "main.h"
-#include "ctype.h"
 
 /**
-* _islower - yolo
-* _islower - prototype
+* _islower - returns 1 if character is lowercase else 0
+* @c: The character to be checked.
 * Return: Always 0 (Success)
 */
 

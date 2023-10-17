@@ -1,22 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-* main - Entry point
-* Description: Write a program that prints _putchar
+* print_alphabet - yolo
+* print_alphabet - prototype
 * Return: Always 0 (Success)
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+	char i;
 
-	for (int i = 0 ; i < 26 ; i++)
+	for (i = 'a'; i <= 'z'; i++)
 {
-	putchar(alpha[i]);
+	_putchar(i);
 }
-{
-	putchar('\n');
-}
-	return (0);
+	_putchar('\n');
 }

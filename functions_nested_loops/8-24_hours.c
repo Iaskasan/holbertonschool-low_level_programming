@@ -3,8 +3,6 @@
 /**
  * jack_bauer - Write a function that prints every minute of the day
  *
- * @hour: prints hours
- *
  * Return: last digit.
  */
 void jack_bauer(void)

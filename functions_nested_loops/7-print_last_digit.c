@@ -1,17 +1,23 @@
 #include "main.h"
 /**
 * print_last_digit - prints the last digit of a number
-* @x: is the modulo 10
+* @n: is the modulo 10
 * Return: Returns the last digit of x
 */
 
-int print_last_digit(int x)
+int print_last_digit(int n)
 {
-	int xLast;
+	int l;
 
-	xLast = x % 10;
+	l = n % 10;
+	if (l < 0)
 {
-	_putchar ('0' + xLast);
+	_putchar(-l + 48);
+	return (-l);
 }
-	return (xLast);
+	else
+{
+	_putchar(l + 48);
+	return (l);
+}
 }

@@ -16,6 +16,7 @@ void print_diagonal(int n)
 			if (a > b + 1)
 			_putchar(' ');
 		_putchar('\\');
-		_putchar ('\n');
+		_putchar('\n');
 	}
+	_putchar('\n');
 }

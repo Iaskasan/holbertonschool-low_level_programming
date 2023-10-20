@@ -22,9 +22,13 @@ int main(void)
 		{
 			printf("Fizz ");
 		}
-		else if (a % 5 == 0)
+		else if (a % 5 == 0 && a < 98)
 		{
 			printf("Buzz ");
+		}
+		else if (a % 5 == 0 && a > 98)
+		{
+			printf("Buzz");
 		}
 		else if (a % 5 != 0 && a % 3 != 0)
 			printf("%d ", a);

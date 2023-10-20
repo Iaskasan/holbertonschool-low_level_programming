@@ -12,6 +12,6 @@ void print_most_numbers(void)
 
 	if (print_most_numbers != 2 && print_most_numbers != 4)
 	for (print_most_numbers = 0; print_most_numbers <= 9 ; print_most_numbers++)
-	_putchar(print_numbers + '0');
+	_putchar(print_most_numbers + '0');
 	_putchar('\n');
 }

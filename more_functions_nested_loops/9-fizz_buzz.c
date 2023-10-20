@@ -32,6 +32,8 @@ int main(void)
 		}
 		else if (a % 5 != 0 && a % 3 != 0)
 			printf("%d ", a);
+
 	}
+	putchar('\n');
 	return (0);
 }

@@ -10,9 +10,8 @@ char *string_toupper(char *ado)
 {
 	int i;
 
-
-	for (i = 0 ; i < *ado ; i++)
+	for (i = 0 ; i <= *ado ; i++)
 	if (*ado < 123 && *ado > 97)
-		ado = ado - 32;
+		ado -= 32;
 	return (ado);
 }

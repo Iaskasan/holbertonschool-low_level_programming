@@ -8,10 +8,15 @@
 
 char *string_toupper(char *ado)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0 ; i <= *ado ; i++)
-	if (*ado < 123 && *ado > 97)
-		ado -= 32;
+	while (ado[i] != '\0')
+	{
+		if (ado[i] >= 'a' && ado[i] <= 'z')
+		{
+			ado[i] -= 32;
+		}
+		i++;
+	}
 	return (ado);
 }

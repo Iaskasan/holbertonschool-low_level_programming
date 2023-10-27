@@ -19,6 +19,7 @@ char *leet(char *str)
 			if (str[i] == let[j])
 				str[i] = num[j];
 		}
+		i++;
 	}
 	return (str);
 }

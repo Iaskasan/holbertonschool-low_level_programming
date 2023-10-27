@@ -10,13 +10,16 @@ char *leet(char *str)
 {
 	char *let = "aeotlAEOTL";
 	char *num = "4307143071";
-	int i = 0, j = 0;
+	int i = 0, j;
 
-	for (let[i] = 0 ; i < '\0' ; i++)
-	for (num[j] = 0 ; j < '\0' ; j++)
-		if (i == j)
+	while (str[i])
+	{
+		for (j = 0; j < 10; j++)
 		{
-		*let = *num;
+			if (str[i] == let[j])
+				str[i] = num[j];
 		}
+	}
 	return (str);
 }
+

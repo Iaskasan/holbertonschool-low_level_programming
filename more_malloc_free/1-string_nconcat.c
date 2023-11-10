@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		nconc[len1 + j] = s2[j];
 	}
-	if (n >= len2)
+	if (n >= j)
 	{
 	n = len2;
 	}

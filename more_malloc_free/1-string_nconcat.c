@@ -39,10 +39,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		nconc[len1 + j] = s2[j];
 	}
-	if (n >= j)
-	{
-	n = len2;
-	}
-	nconc[len1 + n] = '\0';
+	nconc[len1 + j] = '\0';
 	return (nconc);
 }

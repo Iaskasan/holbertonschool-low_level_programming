@@ -22,12 +22,6 @@ int main(int argc, char *argv[])
 	}
 	if (operation != NULL)
 	{
-		if ((*operator == '/' || *operator == '%') && num2 == 0)
-		{
-			printf("Error\n");
-			return (100);
-		}
-
 		printf("%d\n", result);
 		return (0);
 	}

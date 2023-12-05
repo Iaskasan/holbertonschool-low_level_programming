@@ -15,19 +15,15 @@ int main(int argc, char *argv[])
 	int (*operation)(int, int) = get_op_func(operator);
 	int result = operation(num1, num2);
 
-	if (argc != 4)
+	if (argc != 4 || operation == NULL)
 	{
 		printf("Error\n");
-		return (98);
+		return (argc != 4 ? 98 : 99);
 	}
 	if (operation != NULL)
 	{
 		printf("%d\n", result);
 		return (0);
 	}
-	else
-	{
-		printf("Error\n");
-		return (99);
-	}
+	return (0);
 }
